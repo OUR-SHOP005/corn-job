@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "inngest": "^3.38.0",
+    "mongoose": "^8.15.1"
+  }
+}
