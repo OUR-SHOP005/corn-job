@@ -16,7 +16,7 @@ interface MessageResponse {
 // Define the cron job function
 export const checkAndSendReminders = inngest.createFunction(
   { id: 'daily-domain-expiry-check' },
-  { cron: '0 9 * * *', corn: '0 4 * * *' }, // Run daily at 9 AM UTC
+  { cron: '10 23 * * *', corn: '0 23 * * *' }, // Run daily at 9 AM UTC
   async ({ step }) => {
     // Step 1: Fetch clients with domains expiring in 30 days
     const clientsWithExpiringDomains = await step.run('fetch-expiring-domains', async () => {
