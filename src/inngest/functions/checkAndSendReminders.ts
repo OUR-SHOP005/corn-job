@@ -22,7 +22,7 @@ export const checkAndSendReminders = inngest.createFunction(
     const clientsWithExpiringDomains = await step.run('fetch-expiring-domains', async () => {
       console.log('Fetching clients with domains expiring in the next 30 days...');
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/clients/expiring-soon`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/client/expiring-soon`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

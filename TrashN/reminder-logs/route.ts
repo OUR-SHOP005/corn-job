@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import dbConnect from '../../../Trash/lib/dbConnect';
-import ReminderLog, { IReminderLog } from '../../../Trash/models/ReminderLog';
+import dbConnect from '../../../TrashN/lib/dbConnect';
+import ReminderLog, { IReminderLog } from '../../../TrashN/models/ReminderLog';
 
 export async function POST(req: Request) {
   try {

@@ -25,7 +25,7 @@ export default function Home() {
     async function fetchReminderLogs() {
       try {
         setLoading(true);
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/reminder-logs`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/client/reminder-logs`);
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
